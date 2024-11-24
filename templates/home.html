@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF - 8">
+    <meta name="viewport" content="width=device - width, initial - scale = 1.0">
+    <title>主页</title>
+    <style>
+        /* 整体页面的背景样式 */
+        body {
+            background-image: url('{{ url_for('static', filename='web-2.png') }}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans - serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* 链接样式 */
+        a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #ffff00;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>欢迎来到主页</h1>
+
+
+    <h2><br><a href="{{ url_for('user.user') }}">前往用户页面</a></h2>
+</body>
+
+</html>
